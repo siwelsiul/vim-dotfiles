@@ -1,0 +1,4 @@
+neobundle.vim
+syntastic
+vim-colors-solarized
+vim-fugitive
