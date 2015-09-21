@@ -57,6 +57,7 @@ set display+=lastline " show last line, even if it doesn't fit in the window
 
 set number			      " show line numbers
 
+
 " ----------------------------------------------------------------------------
 "  Syntax, highlighting and spelling {{{1
 " ----------------------------------------------------------------------------
@@ -69,6 +70,9 @@ if exists('+colorcolumn')
   set colorcolumn=80    " display a line in column 80 to show you
                         " where to line break.
 endif
+
+" Terminal transparent
+hi Normal ctermbg=None 
 
 " ----------------------------------------------------------------------------
 "  Multiple windows {{{1
@@ -265,3 +269,5 @@ autocmd BufReadPost *
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+
