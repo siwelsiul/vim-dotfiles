@@ -1,3 +1,7 @@
+" ----------------------------------------------------------------------------
+"  Vim package manager 
+" ----------------------------------------------------------------------------
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
@@ -31,3 +35,17 @@ Plug 'scrooloose/nerdtree'
 " Add plugins to &runtimepath
 
 call plug#end()
+
+" ----------------------------------------------------------------------------
+"  Displaying text 
+" ----------------------------------------------------------------------------
+
+syntax on
+
+set number
+
+set scrolloff=3
+
+set linebreak
+
+set showbreak=>>\ \ 
