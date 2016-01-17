@@ -49,3 +49,14 @@ set scrolloff=3
 set linebreak
 
 set showbreak=>>\ \ 
+
+
+" ----------------------------------------------------------------------------
+"  Tabs and indenting 
+" ----------------------------------------------------------------------------
+set tabstop=4             " tab = 4 spaces
+set shiftwidth=4          " autoindent indents 4 spaces
+set smarttab              " <TAB> in front of line inserts 'shiftwidth' blanks
+set softtabstop=4
+set shiftround            " round to 'shiftwidth' for "<<" and ">>"
+set expandtab
