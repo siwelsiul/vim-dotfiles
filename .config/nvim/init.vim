@@ -6,6 +6,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
 
+Plug 'altercation/vim-colors-solarized'
+
 " Make sure you use single quotes
 "Plug 'junegunn/seoul256.vim'
 "Plug 'junegunn/vim-easy-align'
@@ -60,3 +62,30 @@ set smarttab              " <TAB> in front of line inserts 'shiftwidth' blanks
 set softtabstop=4
 set shiftround            " round to 'shiftwidth' for "<<" and ">>"
 set expandtab
+
+
+" ----------------------------------------------------------------------------
+"  Syntax, highlighting and spelling
+" ----------------------------------------------------------------------------
+
+let g:solarized_termcolors=256 "Not necessary if terminal colors set to
+                               "solarized
+set background=dark
+colorscheme solarized
+hi Normal ctermbg=none|        "Terminal transparent
+
+if exists('+colorcolumn')
+  set colorcolumn=80           " display a line in column 80 to show you
+                               " where to line break.
+endif
+
+" ----------------------------------------------------------------------------
+"  Messages and info
+" ----------------------------------------------------------------------------
+set ruler
+
+" ----------------------------------------------------------------------------
+"  Multiple Windows
+" ----------------------------------------------------------------------------
+
+set hidden
