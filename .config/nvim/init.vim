@@ -4,22 +4,24 @@
 
 call plug#begin('~/.vim/plugged')
 
+
 Plug 'scrooloose/nerdtree'
 
 Plug 'altercation/vim-colors-solarized'
 
 Plug 'majutsushi/tagbar'
 
+Plug 'Rip-Rip/clang_complete'
+
+Plug 'octol/vim-cpp-enhanced-highlight'
 "Plug 'justmao945/vim-clang'
 "let g:clang_compilation_database = './build'
 "let g:clang_compilation_database = '.'
 "let g:clang_ccp_options = '-std=c++1 -stdlib=libc++'
 "Plug 'taglist.vim'
-
 "Plug 'Shougo/deoplete.nvim'
-
-"Plug 'Rip-Rip/clang_complete'
-
+"
+Plug 'vimwiki/vimwiki' 
 
 " Make sure you use single quotes
 "Plug 'junegunn/seoul256.vim'
